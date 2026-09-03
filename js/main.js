@@ -5,6 +5,7 @@
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     });
   }
   var form = document.querySelector("#visit-form");
@@ -12,7 +13,10 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var note = document.querySelector(".form-success");
-      if (note) { note.classList.add("is-visible"); note.focus(); }
+      if (note) {
+        note.classList.add("is-visible");
+        note.focus();
+      }
       form.reset();
     });
   }
