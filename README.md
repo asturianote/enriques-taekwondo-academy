@@ -26,14 +26,12 @@ Relative links are set for a GitHub Pages project site.
 - Secondary CTA: Free introductory class
 
 ## Assets
-Crops from the official brand board (`brand-board.jpeg`):
-- `assets/logo-lockup.png` — stacked primary lockup (eclipse mark + ECLIPSE / TAEKWONDO + 태권도)
-- `assets/logo-banner.png` — high-res horizontal lockup from the top of the board
-- `assets/seal.png` — circular seal, masked to a circle
+Official marks, cropped from the black-background logo set so the light artwork sits on the navy header, hero, membership band, and footer:
+- `assets/icon.png` — eclipse icon (header, hero, about-card seal)
+- `assets/favicon.png` — icon on black
+- `assets/logo-horizontal.png` — horizontal lockup (membership band)
+- `assets/logo-vertical.png` — vertical lockup (footer)
 - `assets/eclipse-photo.png` — diamond-ring eclipse photograph
-
-Recreated in SVG (crops were too small or had overlapping text):
-- `assets/eclipse-ring.svg` — eclipse / diamond-ring mark
 - `assets/icon-focus.svg`, `icon-discipline.svg`, `icon-respect.svg`, `icon-confidence.svg`, `icon-excellence.svg`
 
 Skipped: hero kick photo (website mockup had nav and headline overlapping the figure).
