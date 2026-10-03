@@ -1,7 +1,7 @@
 # Eclipse Taekwondo — sample site
 
 Sample marketing site for **Eclipse Taekwondo**, restyled from the official brand board (navy, gold, eclipse mark).
-Not a live business listing. Location, phone, prices, and class times are intentionally omitted until they are real.
+Not a live business listing. Street address, phone, prices, and class times stay out until they are real. The site states the public opening: spring 2027, Southwest Broward (Miramar or Pembroke Pines), street coming soon.
 
 Public name: Eclipse Taekwondo. Founder: Master Enrique Suarez, 4th Dan Kukkiwon.
 Tagline: Focus. Discipline. Excellence.
