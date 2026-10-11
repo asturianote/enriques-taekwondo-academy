@@ -1,45 +1,39 @@
-# Eclipse Taekwondo — sample site
+# Eclipse Taekwondo — website
 
-Sample marketing site for **Eclipse Taekwondo**, restyled from the official brand board (navy, gold, eclipse mark).
-Not a live business listing. Street address, phone, prices, and class times stay out until they are real. The site states the public opening: spring 2027, Southwest Broward (Miramar or Pembroke Pines), street coming soon.
+Static website for **Eclipse Taekwondo**, the Taekwondo school led by Master Enrique Suarez
+(Kukkiwon 4th Dan), opening spring 2027 in Southwest Broward, South Florida.
 
-Public name: Eclipse Taekwondo. Founder: Master Enrique Suarez, 4th Dan Kukkiwon.
-Tagline: Focus. Discipline. Excellence.
+Published with GitHub Pages as a project site (`/enriques-taekwondo-academy/`). All links are relative,
+so the site works from any sub-path or straight from the file system. No build step.
 
-Open `index.html`, `classes.html`, or `contact.html` in a browser.
-Relative links are set for a GitHub Pages project site.
+## Pages
+| File | Page |
+|---|---|
+| `index.html` | Home: hero, age groups, why Eclipse, five tenets, instructor teaser |
+| `about.html` | Master Enrique Suarez: bio, credentials, experience, mission |
+| `programs.html` | Classes, invitation-only teams, holiday camps |
+| `schedule.html` | Weekly Monday–Friday schedule (table on desktop, per-day list on phones) |
+| `contact.html` | Free trial / inquiry form (opens a pre-filled `mailto:`) |
+| `classes.html` | Redirect to `programs.html` so old links keep working |
 
-## Files
-- `index.html` — Home (about and team live here)
-- `classes.html` — Classes
-- `contact.html` — Contact (form does not send)
-- `css/styles.css`
-- `js/main.js`
-- `assets/` — brand crops and SVG marks
-- `README.md`
+`css/styles.css` holds the whole design; `js/main.js` runs the mobile menu and the mailto form.
 
-## Brand
-- Colors: navy/charcoal `#0B1323`, gold `#D4AF37`, slate `#8A8D94`, white `#FFFFFF`
-- Display type: Outfit (Google Fonts), all-caps; Korean `태권도` in Noto Sans KR
-- Headline: Become the light in the dark.
-- Primary CTA: Start your journey
-- Secondary CTA: Free introductory class
+## Design
+- Colors sampled from the official logo files: gold light `#FFC736`, gold `#FCA201`, orange `#F28100`
+  on black / near-black (`#000`, `#0A0A0C`, `#141417`). White-background logo variants are used in light sections.
+- Fonts (Google Fonts): **Saira** bold/extra-bold italic for headings (echoes the italic ECLIPSE wordmark),
+  **Inter** for body text.
 
-## Assets
-Official marks, cropped from the black-background logo set so the light artwork sits on the navy header, hero, membership band, and footer:
-- `assets/icon.png` — eclipse icon (header, hero, about-card seal)
-- `assets/favicon.png` — icon on black
-- `assets/logo-horizontal.png` — horizontal lockup (membership band)
-- `assets/logo-vertical.png` — vertical lockup (footer)
-- `assets/eclipse-photo.png` — diamond-ring eclipse photograph
-- `assets/icon-focus.svg`, `icon-discipline.svg`, `icon-respect.svg`, `icon-confidence.svg`, `icon-excellence.svg`
+## Sources
+From Enrique's Drive folder *RESOURCES - ECLIPSE TAEKWONDO LLC*:
+- `LOGO/` — official logo files (trimmed and resized into `assets/`)
+- Master Enrique's 2026 resume — public credentials and teaching experience only
+- Weekly Class Schedule — the final opening schedule (class names follow this file)
+- Business Plan 3.0 — mission statement and program descriptions only
 
-Skipped: hero kick photo (website mockup had nav and headline overlapping the figure).
-
-## How to open
-Double-click `index.html` or open it from a browser File menu.
-Optional local server: from this folder run `python3 -m http.server 8080` then visit port 8080.
-
-## Swap later
-Colors and fonts live in `:root` in `css/styles.css`.
-Add street address, phone, class times, and prices only when those facts exist.
+## Privacy rule
+Nothing private goes on this site. No prices or dollar amounts, financing, startup costs, revenue or
+forecasts, enrollment targets, market/demographic or competitor research, staffing or payroll,
+insurance, company-formation or vendor details. No phone numbers and no academic history from the resume.
+The location is shown only as "Southwest Broward" until the site is confirmed.
+The cash flow forecast was not used at all.

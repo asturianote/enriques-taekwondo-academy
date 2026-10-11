@@ -3,125 +3,116 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact · Eclipse Taekwondo</title>
-  <meta name="description" content="Request a free introductory class at Eclipse Taekwondo. Southwest Broward — Miramar or Pembroke Pines, opening spring 2027. Location coming soon.">
+  <title>Free Trial Class & Contact · Eclipse Taekwondo</title>
+  <meta name="description" content="Book a free trial class at Eclipse Taekwondo, opening spring 2027 in Southwest Broward. Email enrique@eclipsetaekwondo.com.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Free Trial Class & Contact · Eclipse Taekwondo">
+  <meta property="og:description" content="Book a free trial class at Eclipse Taekwondo, opening spring 2027 in Southwest Broward. Email enrique@eclipsetaekwondo.com.">
+  <meta property="og:image" content="assets/icon.png">
+  <link rel="icon" href="assets/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Saira:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="assets/favicon.png" type="image/png">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="header-inner">
-    <a class="logo" href="index.html">
-      <img class="logo-mark" src="assets/icon.png" width="1200" height="1143" alt="">
-      <span class="logo-text"><strong>Eclipse</strong><span>Taekwondo</span><em lang="ko">태권도</em></span>
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Eclipse Taekwondo home">
+      <img src="assets/logo-horizontal.png" width="600" height="245" alt="Eclipse Taekwondo">
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
-    <nav class="nav" id="site-nav">
+    <nav class="nav" id="site-nav" aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="classes.html">Classes</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="schedule.html">Schedule</a>
       <a href="contact.html" aria-current="page">Contact</a>
-      <a href="contact.html" class="btn btn-primary nav-cta">Start your journey</a>
+      <a class="btn btn-primary" href="contact.html">Free trial class</a>
     </nav>
   </div>
 </header>
 <main id="main">
   <section class="page-hero">
     <div class="wrap">
-      <p class="section-kicker">Free introductory class</p>
-      <h1>Start your journey.</h1>
-      <p class="lede">Tell us who is training. We open spring 2027 in Southwest Broward — Miramar or Pembroke Pines. The street address is still coming soon.</p>
+      <p class="kicker">Contact</p>
+      <h1>Book a <span class="grad-text">free trial class</span></h1>
+      <p class="lede">Tell us a little about the student and we&rsquo;ll get back to you with a class that fits.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="wrap info-grid">
-      <div>
-        <div class="place-card">
-          <h3>Where we are</h3>
-          <p>Southwest Broward · Miramar or Pembroke Pines<br>Opening spring 2027 · location coming soon</p>
-          <h3>Who leads</h3>
-          <p>Master Enrique Suarez<br>4th Dan Kukkiwon · 10+ years teaching<br>Head Instructor, Yong-In Tiger Taekwondo, 2020–2026 (200+ students)<br>President and Head Instructor, UCF Taekwondo, 2017–2020<br>USA Taekwondo Associate Coach, Kyorugi (sparring) and Poomsae (forms)</p>
-          <h3>What to expect</h3>
-          <ul>
-            <li>Free introductory class</li>
-            <li>Small group classes</li>
-            <li>Classes taught in English and Spanish</li>
-            <li>Transparent monthly membership</li>
-            <li>Belt tests included — no surprise fees, no long-term contracts</li>
-          </ul>
+    <div class="wrap split" style="align-items:start">
+      <form class="form" id="trial-form" data-mailto="enrique@eclipsetaekwondo.com" action="mailto:enrique@eclipsetaekwondo.com" method="post" enctype="text/plain" novalidate>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
         </div>
-        <div class="map-placeholder" role="img" aria-label="Map coming soon. Eclipse Taekwondo opens spring 2027 in Southwest Broward, Miramar or Pembroke Pines. Street address coming soon.">
-          <span class="pin" aria-hidden="true"></span>
-          <div class="map-label"><strong>Location coming soon</strong> — Southwest Broward, Miramar or Pembroke Pines. Opening spring 2027. A map will go here when the street is set.</div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
         </div>
-      </div>
-      <div>
-        <form class="form" id="visit-form" action="#" method="post">
-          <div class="form-success" tabindex="-1">This sample form does not send yet. Your message was not delivered. We will wire it to email when Eclipse Taekwondo opens.</div>
-          <p class="section-kicker">Inquiry</p>
-          <h2>Request a free class.</h2>
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com">
-          </div>
-          <div class="field">
-            <label for="phone">Phone <span class="optional">(optional)</span></label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="If you prefer a call back">
-          </div>
-          <div class="field">
-            <label for="program">Program interest</label>
-            <select id="program" name="program">
-              <option value="little-tigers">Little Tigers (4–6)</option>
-              <option value="juniors">Juniors (6–12)</option>
-              <option value="teens-adults">Teens &amp; Adults (12+)</option>
-              <option value="advanced">Advanced / Black Belt</option>
-              <option value="teams">Demo, Sparring, or Poomsae team</option>
-              <option value="camps">Camps or birthday party</option>
-              <option value="unsure">Not sure yet</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Who is training, ages, questions…"></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit">Start your journey</button>
-          <p class="form-note">Sample form only — nothing is sent or stored. We will connect this when the academy opens. A free introductory class is always the first step.</p>
-        </form>
-      </div>
+        <div class="field">
+          <label for="f-group">Student age group</label>
+          <select id="f-group" name="group" required>
+            <option value="">Choose one</option>
+            <option>Little Warriors (ages 4&ndash;6)</option>
+            <option>Kids (ages 7&ndash;12)</option>
+            <option>Teen</option>
+            <option>Adult</option>
+            <option>Family (parent + child)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="message" placeholder="Experience, current belt, questions, best days to train..."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send request</button>
+        <p class="form-help">Sending opens your email app with your details filled in, addressed to enrique@eclipsetaekwondo.com.</p>
+        <p class="form-status" role="status" tabindex="-1">Your email app should open now. If it doesn&rsquo;t, write to us at <a href="mailto:enrique@eclipsetaekwondo.com">enrique@eclipsetaekwondo.com</a>.</p>
+      </form>
+
+      <ul class="info-list">
+        <li><b>Email</b><a href="mailto:enrique@eclipsetaekwondo.com">enrique@eclipsetaekwondo.com</a></li>
+        <li><b>Location</b>Southwest Broward, South Florida. Exact location coming soon.</li>
+        <li><b>Opening</b>Spring 2027. Book your free trial now to train in our first classes.</li>
+        <li><b>Classes</b>Monday to Friday, afternoons and evenings. <a href="schedule.html">See the schedule</a>.</li>
+      </ul>
     </div>
   </section>
 </main>
 <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img src="assets/logo-vertical.png" alt="Eclipse Taekwondo" width="1000" height="897">
-        <div>
-          <h2>Eclipse Taekwondo</h2>
-          <p class="footer-ko" lang="ko">태권도</p>
-          <p>Empowering people through Taekwondo in South Florida. Founded by Master Enrique Suarez, 4th Dan Kukkiwon.</p>
-        </div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo-vertical.png" width="500" height="449" alt="Eclipse Taekwondo">
+        <p class="tagline" style="margin-top:1rem">Traditional Taekwondo. Modern coaching.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="about.html">About Master Enrique</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="schedule.html">Class schedule</a></li>
+          <li><a href="contact.html">Book a free trial class</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <ul>
+          <li>Southwest Broward, South Florida</li>
+          <li>Opening spring 2027 &middot; exact location coming soon</li>
+          <li><a href="mailto:enrique@eclipsetaekwondo.com">enrique@eclipsetaekwondo.com</a></li>
+        </ul>
       </div>
     </div>
-    <div>
-      <h2>Train</h2>
-      <p><a href="classes.html">Little Tigers · Juniors · Teens &amp; Adults</a><br>
-      <a href="contact.html">Free introductory class</a></p>
-    </div>
-    <div>
-      <h2>Location</h2>
-      <p>Southwest Broward · Miramar or Pembroke Pines<br>Opening spring 2027 · location coming soon</p>
+    <div class="footer-base">
+      <span>&copy; <span data-year>2026</span> Eclipse Taekwondo. All rights reserved.</span>
+      <span>Led by Master Enrique Suarez &middot; Kukkiwon 4th Dan</span>
     </div>
   </div>
-  <div class="wrap legal">Eclipse Taekwondo · South Florida · Sample site</div>
 </footer>
 <script src="js/main.js"></script>
 </body>
