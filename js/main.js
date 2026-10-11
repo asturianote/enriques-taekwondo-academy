@@ -20,22 +20,12 @@
   var yr = document.querySelectorAll("[data-year]");
   for (var i = 0; i < yr.length; i++) yr[i].textContent = new Date().getFullYear();
 
-  // Static site: the trial form opens the visitor's email app with the fields filled in.
+  // The form has no sending service yet. Show a note instead of exposing any email address.
   var form = document.querySelector("#trial-form");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
-      var to = form.getAttribute("data-mailto");
-      var name = form.elements["name"].value.trim();
-      var email = form.elements["email"].value.trim();
-      var group = form.elements["group"].value;
-      var msg = form.elements["message"].value.trim();
-      var subject = "Free trial class: " + name + " (" + group + ")";
-      var body = "Name: " + name + "\nEmail: " + email + "\nStudent age group: " + group +
-        "\n\nMessage:\n" + (msg || "(none)") + "\n";
-      window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body);
       var status = document.querySelector(".form-status");
       if (status) { status.classList.add("is-visible"); status.focus(); }
     });

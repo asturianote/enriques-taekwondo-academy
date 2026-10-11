@@ -13,10 +13,10 @@ so the site works from any sub-path or straight from the file system. No build s
 | `about.html` | Master Enrique Suarez: bio, credentials, experience, mission |
 | `programs.html` | Classes, invitation-only teams, holiday camps |
 | `schedule.html` | Weekly Monday–Friday schedule (table on desktop, per-day list on phones) |
-| `contact.html` | Free trial / inquiry form (opens a pre-filled `mailto:`) |
+| `contact.html` | Free trial / inquiry form (no sending service yet; no email address is published) |
 | `classes.html` | Redirect to `programs.html` so old links keep working |
 
-`css/styles.css` holds the whole design; `js/main.js` runs the mobile menu and the mailto form.
+`css/styles.css` holds the whole design; `js/main.js` runs the mobile menu and the form note.
 
 ## Design
 - Colors sampled from the official logo files: gold light `#FFC736`, gold `#FCA201`, orange `#F28100`
