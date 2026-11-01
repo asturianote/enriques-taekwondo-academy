@@ -1,119 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free Trial Class & Contact · Eclipse Taekwondo</title>
-  <meta name="description" content="Book a free trial class at Eclipse Taekwondo, opening spring 2027 in Southwest Broward.">
-  <meta name="theme-color" content="#000000">
-  <meta property="og:title" content="Free Trial Class & Contact · Eclipse Taekwondo">
-  <meta property="og:description" content="Book a free trial class at Eclipse Taekwondo, opening spring 2027 in Southwest Broward.">
-  <meta property="og:image" content="assets/icon.png">
-  <link rel="icon" href="assets/favicon-64.png" type="image/png" sizes="64x64">
+  <title>Book a Free Intro Class | Eclipse Taekwondo | Southwest Broward</title>
+  <meta name="description" content="Book a free intro Taekwondo class or join the Founding Families waitlist for Eclipse Taekwondo in Southwest Broward. Online sign-up opens soon.">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="Book a Free Intro Class | Eclipse Taekwondo | Southwest Broward">
+  <meta property="og:description" content="Book a free intro Taekwondo class or join the Founding Families waitlist for Eclipse Taekwondo in Southwest Broward. Online sign-up opens soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <link rel="icon" href="assets/favicon-64.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Saira:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght%400,400;0,700;1,400&family=Montserrat:wght%40600;700;800&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="Eclipse Taekwondo home">
-      <img src="assets/logo-horizontal.png" width="600" height="245" alt="Eclipse Taekwondo">
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="contact.html" aria-current="page">Contact</a>
-      <a class="btn btn-primary" href="contact.html">Free trial class</a>
-    </nav>
-  </div>
-</header>
-<main id="main">
-  <section class="page-hero">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Eclipse Taekwondo home"><img src="assets/logo-h-k.png" alt="Eclipse Taekwondo" width="520" height="201"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="about.html">About</a>
+          <a href="parents.html">Parents</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a class="btn btn-gold" href="contact.html">Free intro class</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero has-glow on-dark">
+      <div class="wrap">
+        <p class="kicker">Free intro class</p>
+        <h1>Your first class<br><span class="gold">is on us.</span></h1>
+        <p class="lede">Tell us a little about who will train. Online sign-up opens soon, and Founding Families hear first.</p>
+      </div>
+    </section>
+    <div class="belt-bar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+    <section class="section section-cream" id="waitlist">
+      <div class="wrap split" style="align-items:start">
+        <div class="panel">
+          <h2 style="font-size:1.6rem">Book a class or join the waitlist</h2>
+          <form id="trial-form" class="form" data-pending novalidate>
+            <div class="field">
+              <label for="f-name">Parent or student name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-contact">Email</label>
+              <input id="f-contact" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <fieldset>
+                <legend>Who will train?</legend>
+                <div class="pills">
+                  <label><input type="radio" name="group" value="little-warriors" required><span>Ages 4&ndash;6</span></label>
+                  <label><input type="radio" name="group" value="kids"><span>Ages 7&ndash;12</span></label>
+                  <label><input type="radio" name="group" value="teen"><span>Teen</span></label>
+                  <label><input type="radio" name="group" value="adult"><span>Adult</span></label>
+                  <label><input type="radio" name="group" value="family"><span>Family</span></label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="field">
+              <label for="f-interest">I am interested in</label>
+              <select id="f-interest" name="interest">
+                <option>A free intro class</option>
+                <option>The Founding Families waitlist</option>
+                <option>Both</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-msg">Anything we should know? (optional)</label>
+              <textarea id="f-msg" name="message"></textarea>
+            </div>
+            <button class="btn btn-gold" type="submit">Request my free class</button>
+            <p class="form-help">Online sign-up opens soon. This form does not send yet.</p>
+            <p class="form-status" role="status" tabindex="-1">Thanks! Online sign-up is not open yet, so this form did not send. Please check back soon. We will announce sign-up here first.</p>
+          </form>
+        </div>
+        <div>
+          <p class="kicker">What to expect</p>
+          <h2>Try a real class with no pressure.</h2>
+          <ul class="arrows" style="margin-bottom:2rem">
+            <li>A full class with students at the same age and level</li>
+            <li>Time to meet Master Suarez and ask questions</li>
+            <li>Parents are welcome to watch</li>
+            <li>No uniform or experience needed</li>
+          </ul>
+          <ul class="info-list">
+            <li><b>Location</b><span>Southwest Broward, South Florida. Exact location coming soon.</span></li>
+            <li><b>Opening</b><span>2027. Opening date to be announced.</span></li>
+            <li><b>Classes</b><span>Monday &ndash; Friday, 3:15 &ndash; 8:30 PM</span></li>
+            <li><b>Language</b><span>English and Spanish</span></li>
+            <li><b>Contact</b><span>Use the form on this page</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
     <div class="wrap">
-      <p class="kicker">Contact</p>
-      <h1>Book a <span class="grad-text">free trial class</span></h1>
-      <p class="lede">Tell us a little about the student and we&rsquo;ll get back to you with a class that fits.</p>
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo-v-k.png" alt="Eclipse Taekwondo" width="420" height="378" loading="lazy">
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="schedule.html">Class schedule</a></li>
+            <li><a href="about.html">About Master Suarez</a></li>
+            <li><a href="parents.html">Parents &amp; FAQ</a></li>
+            <li><a href="contact.html">Book a free intro class</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Where</h2>
+          <ul>
+            <li>Southwest Broward, South Florida</li>
+            <li>Opening in 2027 &middot; date and exact location to be announced</li>
+            <li>Classes taught in English and Spanish</li>
+            <li><a href="contact.html#waitlist">Join the Founding Families waitlist</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span class="brandline">Eclipse Taekwondo &middot; Discipline starts here &middot; Southwest Broward</span>
+        <span>&copy; <span data-year>2026</span> Eclipse Taekwondo &middot; Led by Master Enrique Suarez, Kukkiwon 4th Dan</span>
+      </div>
     </div>
-  </section>
+  </footer>
 
-  <section class="section">
-    <div class="wrap split" style="align-items:start">
-      <form class="form" id="trial-form" action="#" method="post" data-pending="true" novalidate>
-        <div class="field">
-          <label for="f-name">Your name</label>
-          <input id="f-name" name="name" type="text" autocomplete="name" required>
-        </div>
-        <div class="field">
-          <label for="f-email">Email</label>
-          <input id="f-email" name="email" type="email" autocomplete="email" required>
-        </div>
-        <div class="field">
-          <label for="f-group">Student age group</label>
-          <select id="f-group" name="group" required>
-            <option value="">Choose one</option>
-            <option>Little Warriors (ages 4&ndash;6)</option>
-            <option>Kids (ages 7&ndash;12)</option>
-            <option>Teen</option>
-            <option>Adult</option>
-            <option>Family (parent + child)</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="f-msg">Message</label>
-          <textarea id="f-msg" name="message" placeholder="Experience, current belt, questions, best days to train..."></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Send request</button>
-        <p class="form-help">Online sign-up opens soon. Until then, check back here for updates as we get closer to opening.</p>
-        <p class="form-status" role="status" tabindex="-1">Thanks! Online sign-up isn&rsquo;t open yet, so this form didn&rsquo;t send. Please check back soon.</p>
-      </form>
+  <div class="mobile-bar"><a class="btn btn-gold" href="contact.html">Book a free intro class</a></div>
 
-      <ul class="info-list">
-        <li><b>Contact</b><span>Use the form on this page</span></li>
-        <li><b>Location</b>Southwest Broward, South Florida. Exact location coming soon.</li>
-        <li><b>Opening</b>Spring 2027. Book your free trial now to train in our first classes.</li>
-        <li><b>Classes</b>Monday to Friday, afternoons and evenings. <a href="schedule.html">See the schedule</a>.</li>
-      </ul>
-    </div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <img class="footer-logo" src="assets/logo-vertical.png" width="500" height="449" alt="Eclipse Taekwondo">
-        <p class="tagline" style="margin-top:1rem">Traditional Taekwondo. Modern coaching.</p>
-      </div>
-      <div>
-        <h2>Explore</h2>
-        <ul>
-          <li><a href="about.html">About Master Enrique</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="schedule.html">Class schedule</a></li>
-          <li><a href="contact.html">Book a free trial class</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Visit</h2>
-        <ul>
-          <li>Southwest Broward, South Florida</li>
-          <li>Opening spring 2027 &middot; exact location coming soon</li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-base">
-      <span>&copy; <span data-year>2026</span> Eclipse Taekwondo. All rights reserved.</span>
-      <span>Led by Master Enrique Suarez &middot; Kukkiwon 4th Dan</span>
-    </div>
-  </div>
-</footer>
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
