@@ -328,6 +328,12 @@ p{margin:0 0 1em}
 .form-help{font-size:.85rem;color:#BDBDBD;margin:0;text-align:center}
 .form-status{display:none;padding:.9rem 1rem;background:rgba(245,179,1,.12);border:1px solid var(--gold);color:var(--white);margin:0}
 .form-status.is-visible{display:block}
+.form-status.is-ok{border-color:#3DBE6B;background:rgba(61,190,107,.14)}
+.form-status.is-error{border-color:#E5484D;background:rgba(229,72,77,.14)}
+.form-status a,.form-help a{color:var(--gold);text-decoration:underline}
+.hp-field{position:absolute!important;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.turnstile-slot{min-height:65px}
+.form .btn[disabled]{opacity:.7;cursor:wait}
 .info-list{list-style:none;padding:0;margin:0}
 .info-list li{display:grid;grid-template-columns:120px 1fr;border-bottom:1px solid var(--sand)}
 .info-list b{background:var(--black);color:var(--gold);border-left:4px solid var(--gold);font:700 .72rem var(--display);letter-spacing:.12em;text-transform:uppercase;padding:1rem .9rem;display:flex;align-items:center}

@@ -49,14 +49,14 @@
       <div class="wrap split" style="align-items:start">
         <div class="panel">
           <h2 style="font-size:1.6rem">Book a class or join the waitlist</h2>
-          <form id="trial-form" class="form" data-pending novalidate>
+          <form id="trial-form" class="form" action="/api/contact" method="post" novalidate>
             <div class="field">
               <label for="f-name">Parent or student name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required>
+              <input id="f-name" name="name" type="text" autocomplete="name" maxlength="100" required>
             </div>
             <div class="field">
               <label for="f-contact">Email</label>
-              <input id="f-contact" name="email" type="email" autocomplete="email" required>
+              <input id="f-contact" name="email" type="email" autocomplete="email" maxlength="254" required>
             </div>
             <div class="field">
               <fieldset>
@@ -80,11 +80,16 @@
             </div>
             <div class="field">
               <label for="f-msg">Anything we should know? (optional)</label>
-              <textarea id="f-msg" name="message"></textarea>
+              <textarea id="f-msg" name="message" maxlength="2000"></textarea>
             </div>
+            <div class="hp-field" aria-hidden="true">
+              <label for="f-company">Company (leave this blank)</label>
+              <input id="f-company" name="company" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="turnstile-slot" id="turnstile-slot"></div>
             <button class="btn btn-gold" type="submit">Request my free class</button>
-            <p class="form-help">Online sign-up opens soon. This form does not send yet.</p>
-            <p class="form-status" role="status" tabindex="-1">Thanks! Online sign-up is not open yet, so this form did not send. Please check back soon. We will announce sign-up here first.</p>
+            <p class="form-help">We reply by email, usually within two days. This form is protected by Cloudflare Turnstile.</p>
+            <p class="form-status" role="status" tabindex="-1"></p>
           </form>
         </div>
         <div>

@@ -14,10 +14,10 @@ Plain HTML/CSS/JS with no build step. All links are relative, so the site works 
 | `schedule.html` | Weekly Monday–Friday schedule in the guideline pastel colors (grid on desktop, per-day cards on phones), free-class panel, 3-step "how it works" |
 | `about.html` | Master Enrique Suarez: bio, mission, credential stats, credentials table, Five Tenets with Korean names, "Our promise" |
 | `parents.html` | Parents and FAQ: anti-bullying / safety / school benefits, first visit step by step, safety practices, FAQ, events (dates to be announced) |
-| `contact.html` | Free intro class / Founding Families waitlist form (no sending service yet, nothing is sent; no email address or phone is published) |
+| `contact.html` | Free intro class / Founding Families waitlist form. On eclipsetaekwondo.com it is protected by Cloudflare Turnstile and sent by the site's Cloudflare Worker (`/api/contact`). Copies hosted elsewhere, like GitHub Pages, point visitors to eclipsetaekwondo.com. No email address or phone is published. |
 | `classes.html` | Redirect to `programs.html` so old links keep working |
 
-`css/styles.css` holds the whole design; `js/main.js` runs the mobile menu, the footer year and the form note.
+`css/styles.css` holds the whole design; `js/main.js` runs the mobile menu, the footer year and the contact form (Turnstile + submit to `/api/contact`).
 
 ## Design (from "Eclipse Taekwondo — Design Guidelines")
 - Fonts (Google Fonts): **Montserrat** for headings, labels and numbers; **Lato** for body text.
@@ -44,4 +44,4 @@ Nothing private or internal goes on this site:
 - No address, phone numbers, email addresses (not in pages, footer, links or meta tags), family details or birthdates.
 - No prices, tuition, fees, revenue, projections, budgets, lease terms or other business-plan figures.
 - No names of previous employers or schools. No academic history.
-- Location is shown only as "Southwest Broward". Contact is only through the pending sign-up form.
+- Location is shown only as "Southwest Broward". Contact is only through the form. The destination address lives only in the Worker's secret settings, never in this repo.
